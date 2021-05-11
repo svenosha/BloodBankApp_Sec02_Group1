@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBE5E0"
+    tools:context=".AdminHomepage">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="325dp"
+        android:layout_height="167dp"
+        app:srcCompat="@drawable/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Admin"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_viewusers"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="VIEW USERS"
+        android:textSize="26sp"
+        app:backgroundTint="#C85250" />
+
+    <Button
+        android:id="@+id/btn_viewdonors"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="VIEW DONORS"
+        android:textSize="26sp"
+        app:backgroundTint="#C85250" />
+
+    <Button
+        android:id="@+id/btn_viewrequests"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="VIEW REQUESTS"
+        android:textSize="26sp"
+        app:backgroundTint="#C85250" />
+
+    <Button
+        android:id="@+id/btn_viewbloodbank"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="VIEW BLOOD BANK"
+        android:textSize="26sp"
+        app:backgroundTint="#C85250" />
+
+</LinearLayout>

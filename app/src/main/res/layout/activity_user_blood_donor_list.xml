@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserBloodDonorList"
+    android:orientation="vertical"
+    android:background="#FBE5E0">
+
+    <TextView
+        android:id="@+id/tv_us_donorlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Donor List"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/ed_us_search"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Search"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittextsearch"
+        android:layout_gravity="center" />
+
+    <ListView
+        android:id="@+id/lv_us_donor"
+        android:background="#FBECC4"
+        android:layout_width="357dp"
+        android:layout_height="397dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+
+</LinearLayout>

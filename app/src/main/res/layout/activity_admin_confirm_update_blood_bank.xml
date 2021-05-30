@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminManageBloodBank">
+    tools:context=".adminConfirmUpdateBloodBank">
 
     <TextView
         android:id="@+id/tv_bloodBank"
@@ -361,17 +361,18 @@
         app:layout_constraintTop_toBottomOf="@+id/ed_AMinusAmount" />
 
     <Button
-        android:id="@+id/btn_Update"
+        android:id="@+id/btn_Confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="41dp"
         android:backgroundTint="#C85250"
-        android:text="UPDATE"
+        android:text="CONFIRM"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tv_ABMinus"
-        app:layout_constraintTop_toBottomOf="@+id/ed_BMinusAmount" />
+        app:layout_constraintTop_toBottomOf="@+id/ed_BMinusAmount"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

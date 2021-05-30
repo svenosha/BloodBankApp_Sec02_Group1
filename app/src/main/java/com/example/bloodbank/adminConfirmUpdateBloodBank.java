@@ -7,15 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class AdminManageBloodBank extends AppCompatActivity {
+public class adminConfirmUpdateBloodBank extends AppCompatActivity {
 
-    //admin update blood bank amount
     private EditText location,email, phone,  aPlusAmt, bPlusAmt, aMinusAmt, bMinusAmt, oPlusAmt, abPlusAmt, oMinusAmt, abMinusAmt;
-    private Button update;
+    private Button confirm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_manage_blood_bank);
+        setContentView(R.layout.activity_admin_confirm_update_blood_bank);
 
         location = findViewById(R.id.ed_location);
         email = findViewById(R.id.ed_email);
@@ -28,9 +27,9 @@ public class AdminManageBloodBank extends AppCompatActivity {
         abPlusAmt = findViewById(R.id.ed_ABPlusAmount);
         oMinusAmt = findViewById(R.id.ed_OMinusAmount);
         abMinusAmt = findViewById(R.id.ed_ABMinusAmount);
-        update = findViewById(R.id.btn_Update);
+        confirm = findViewById(R.id.btn_Confirm);
 
-        update.setOnClickListener(new View.OnClickListener() {
+        confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

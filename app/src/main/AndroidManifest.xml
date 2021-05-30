@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodBank">
-        <activity android:name=".AdminManageBloodBank"></activity>
+        <activity android:name=".adminConfirmUpdateBloodBank"></activity>
+        <activity android:name=".UserViewBloodBank" />
+        <activity android:name=".AdminManageBloodBank" />
         <activity android:name=".UserDonorDetail" />
         <activity android:name=".AdminDonorDetails" />
         <activity android:name=".AdminBloodDonorList" />

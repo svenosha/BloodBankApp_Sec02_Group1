@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserViewBloodBank">
+
+    <TextView
+        android:id="@+id/tv_AMinus"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#F79489"
+        android:text=" A-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <EditText
+        android:id="@+id/ed_APlusAmount"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/tv_BPlus"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#F79489"
+        android:text=" B+"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/tv_APlus"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#F79489"
+        android:text=" A+"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/tv_bloodBankQtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group Quantity"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/tv_OPlus"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#F79489"
+        android:text=" O+"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/tv_ABMinus"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#F79489"
+        android:text=" AB-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <EditText
+        android:id="@+id/ed_ABMinusAmount"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <TextView
+        android:id="@+id/tv_OMinus"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#F79489"
+        android:text=" O-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <TextView
+        android:id="@+id/tv_ABPlus"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#F79489"
+        android:text="AB+"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <EditText
+        android:id="@+id/ed_OPlusAmount"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <EditText
+        android:id="@+id/ed_ABPlusAmount"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <EditText
+        android:id="@+id/ed_OMinusAmount"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <EditText
+        android:id="@+id/ed_BPlusAmount"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <EditText
+        android:id="@+id/ed_BMinusAmount"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <EditText
+        android:id="@+id/ed_location"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/ed_AMinusAmount"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#FEECC3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <TextView
+        android:id="@+id/tv_bloodBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Bank"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/tv_BMinus"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:background="#F79489"
+        android:text=" B-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C85250"
+        android:text="Email"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <Button
+        android:id="@+id/btn_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C85250"
+        android:text="Phone"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

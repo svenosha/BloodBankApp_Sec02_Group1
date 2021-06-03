@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class AdminHomepage extends AppCompatActivity {
 
-    private Button userList, donorList, requestList, bloodList;
+    private Button userList, donorList, btnrequestlist, bloodList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class AdminHomepage extends AppCompatActivity {
 
         userList = findViewById(R.id.btn_viewusers);
         donorList = findViewById(R.id.btn_viewdonors);
-        requestList = findViewById(R.id.btn_viewrequests);
+        btnrequestlist = findViewById(R.id.btn_viewrequests);        
         bloodList = findViewById(R.id.btn_viewrequests);
 
 
@@ -38,13 +38,6 @@ public class AdminHomepage extends AppCompatActivity {
             }
         });
 
-        requestList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Intent intenthome2request = new Intent (AdminHomepage.this, AdminUserList.class);
-//                startActivity(intenthome2request);
-            }
-        });
 
         bloodList.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,5 +46,18 @@ public class AdminHomepage extends AppCompatActivity {
 //                startActivity(intenthome2blood);
             }
         });
+
+        btnrequestlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRequestList();
+            }
+        });
+
+    }
+
+    public void openRequestList(){
+        Intent intentAdminRequestList = new Intent(this, AdminRequestList.class);
+        startActivity(intentAdminRequestList);
     }
 }

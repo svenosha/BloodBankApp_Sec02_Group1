@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class UserHomepage extends AppCompatActivity {
 
     private TextView username;
-    private Button profile, BDonor, BBank, request;
+    private Button profile, BDonor, BBank, btnMakeRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class UserHomepage extends AppCompatActivity {
         profile = findViewById(R.id.btn_myprofile);
         BDonor = findViewById(R.id.btn_blooddonor);
         BBank = findViewById(R.id.btn_bloodbank);
-        request = findViewById(R.id.btn_makerequest);
+        btnMakeRequest = findViewById(R.id.btn_makerequest);
 
 
         profile.setOnClickListener(new View.OnClickListener() {
@@ -48,12 +48,19 @@ public class UserHomepage extends AppCompatActivity {
 
             }
         });
+        
 
-        request.setOnClickListener(new View.OnClickListener() {
+        btnMakeRequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                openMakeRequest();
             }
         });
+
+    }
+
+    public void openMakeRequest(){
+        Intent intentMakeRequest = new Intent(this, UserMakeRequest.class);
+        startActivity(intentMakeRequest);
     }
 }

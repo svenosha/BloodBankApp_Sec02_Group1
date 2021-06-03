@@ -25,6 +25,9 @@
         <activity android:name=".registration" />
         <activity android:name=".adminLogin" />
         <activity android:name=".userLogin" />
+        <activity android:name=".UserMakeRequest"/>
+        <activity android:name=".AdminRequestList"/>
+        <activity android:name=".AdminViewRequestList"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

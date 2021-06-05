@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="#F79489"
-        android:text="REGISTRATIONnnn"
+        android:text="REGISTRATION"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="26sp"

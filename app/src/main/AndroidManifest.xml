@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodBank">
-        <activity android:name=".UserDonorDetail"></activity>
+        <activity android:name=".AdminUserDetails"></activity>
+        <activity android:name=".AdminUserList" />
+        <activity android:name=".UserEditProfile" />
+        <activity android:name=".UserViewProfile" />
+        <activity android:name=".adminConfirmUpdateBloodBank" />
+        <activity android:name=".UserViewBloodBank" />
+        <activity android:name=".AdminManageBloodBank" />
+        <activity android:name=".UserDonorDetail" />
         <activity android:name=".AdminDonorDetails" />
         <activity android:name=".AdminBloodDonorList" />
         <activity android:name=".UserBloodDonorList" />
@@ -18,6 +25,9 @@
         <activity android:name=".registration" />
         <activity android:name=".adminLogin" />
         <activity android:name=".userLogin" />
+        <activity android:name=".UserMakeRequest"/>
+        <activity android:name=".AdminRequestList"/>
+        <activity android:name=".AdminViewRequestList"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

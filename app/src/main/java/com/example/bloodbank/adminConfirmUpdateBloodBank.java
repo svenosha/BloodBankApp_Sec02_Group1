@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class adminConfirmUpdateBloodBank extends AppCompatActivity {
@@ -34,7 +35,7 @@ public class adminConfirmUpdateBloodBank extends AppCompatActivity {
         abMinusAmt = findViewById(R.id.ed_ABMinusAmount);
         confirm = findViewById(R.id.btn_Confirm);
         reff = FirebaseDatabase.getInstance().getReference().child("BloodBank");
-        bloodbank = new BloodBank;
+        bloodbank = new BloodBank();
 
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override

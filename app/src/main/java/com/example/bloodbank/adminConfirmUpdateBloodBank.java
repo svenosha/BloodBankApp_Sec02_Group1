@@ -8,8 +8,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Map;
 
 public class adminConfirmUpdateBloodBank extends AppCompatActivity {
 
@@ -49,9 +52,9 @@ public class adminConfirmUpdateBloodBank extends AppCompatActivity {
                 int ominus = Integer.parseInt(oMinusAmt.getText().toString().trim());
                 int abminus = Integer.parseInt(abMinusAmt.getText().toString().trim());
 
-                bloodbank.setLocation(location.getText().toString().trim());
-                bloodbank.setPhone(phone.getText().toString().trim());
-                bloodbank.setEmail(email.getText().toString().trim());
+                //bloodbank.setLocation(location.getText().toString().trim());
+                //bloodbank.setPhone(phone.getText().toString().trim());
+                //bloodbank.setEmail(email.getText().toString().trim());
                 bloodbank.setAPlus(aplus);
                 bloodbank.setBPlus(bplus);
                 bloodbank.setOPlus(oplus);
@@ -60,9 +63,16 @@ public class adminConfirmUpdateBloodBank extends AppCompatActivity {
                 bloodbank.setBMinus(bminus);
                 bloodbank.setOMinus(ominus);
                 bloodbank.setABMinus(abminus);
+                BloodBank blooodbank = new BloodBank;
+                blooodbank.put("APlus",aplus,"BPlus",bplus,,"OPlus",oplus,"ABPlus",abplus,"AMinus",aminus,"BMinus",bminus,"OMinus",ominus,"ABMinus",abminus);
 
-                reff.push().setValue(bloodbank);
-                Toast.makeText(adminConfirmUpdateBloodBank.this,"Blood Bank Update Successfully",Toast.LENGTH_SHORT).show();
+                reff.child("BloodBank").updateChildren(blooodbank).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(adminConfirmUpdateBloodBank.this,"Blood Bank Update Successfully",Toast.LENGTH_SHORT).show();
+                    }
+                });
+
 
 
 

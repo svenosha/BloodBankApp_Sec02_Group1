@@ -10,12 +10,24 @@ import android.text.SpannableString;
 import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
+import org.jetbrains.annotations.NotNull;
 
 public class userLogin extends AppCompatActivity {
 
-    private TextView registerText;
-    private Button btnLogin;
+    TextView registerText;
+    EditText email, password;
+    Button btnLogin;
+
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +35,11 @@ public class userLogin extends AppCompatActivity {
         setContentView(R.layout.activity_user_login);
 
         registerText = findViewById(R.id.tv_newuser);
+        email = findViewById(R.id.et_userEmail);
+        password =findViewById(R.id.et_userPassword);
         btnLogin = findViewById(R.id.btn_login);
+
+        mAuth = FirebaseAuth.getInstance();
 
         registerText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,17 +51,38 @@ public class userLogin extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openUserHomepage();
+                String emel = email.getText().toString().trim();
+                String pass = password.getText().toString().trim();
+
+                if(emel.isEmpty()){
+                    email.setError("Email is Required");
+                    email.requestFocus();
+                    return;
+                }
+
+                if (pass.isEmpty()) {
+                    password.setError("Password is Required");
+                    password.requestFocus();
+                    return;
+                }
+
+                //authenticate the user
+                mAuth.signInWithEmailAndPassword(emel, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(userLogin.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(),UserHomepage.class));
+                        } else {
+                            Toast.makeText(userLogin.this, "Error Login! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
             }
         });
     }
     public void openRegister(){
         Intent intentRegister = new Intent(this, registration.class);
         startActivity(intentRegister);
-    }
-
-    public void openUserHomepage(){
-        Intent intentUserHomepage = new Intent(this, UserHomepage.class);
-        startActivity(intentUserHomepage);
     }
 }

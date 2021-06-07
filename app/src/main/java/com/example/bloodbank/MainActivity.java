@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //check database connection
+        Toast.makeText(MainActivity.this, "Database is connected", Toast.LENGTH_LONG).show();
+
         setTitle("Blood Bank");
 
         //linking

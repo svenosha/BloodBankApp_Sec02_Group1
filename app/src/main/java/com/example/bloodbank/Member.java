@@ -6,77 +6,27 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 public class Member {
+    public String name;
+    public String age;
+    public String location;
+    public String phone;
+    public String email;
+    public String username;
 
-    private String name;
-    private Integer age;
-    private String location;
-    private long phone;
-    private String email;
-    private String username;
-    private String password;
-
-    private String gender;
-    private String bloodtype;
-
+    public String gender;
+    public String bloodtype;
 
     public Member() {
-
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Member(String name, String age, String location, String phone, String email, String username){
         this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
         this.age = age;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
         this.location = location;
-    }
-
-    public long getPhone() {
-        return phone;
-    }
-
-    public void setPhone(long phone) {
         this.phone = phone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
+        this.email =email;
         this.username = username;
-    }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getGender() {

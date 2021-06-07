@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(MainActivity.this, "Firebase is Success", Toast.LENGTH_LONG).show();
-
         setTitle("Blood Bank");
 
         //linking

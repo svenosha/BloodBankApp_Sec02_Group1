@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -314,5 +314,7 @@
                 app:backgroundTint="#C85250" />
         </LinearLayout>
     </ScrollView>
+
+
 
 </LinearLayout>

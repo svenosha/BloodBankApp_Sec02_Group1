@@ -26,13 +26,13 @@ public class Email extends AppCompatActivity {
         Email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sendto=to.getText().toString();
+                //String sendto=to.getText().toString();
                 String Esubject=subject.getText().toString();
                 String Emessage=message.getText().toString();
 
 
                 Intent email = new Intent(Intent.ACTION_SEND);
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{ sendto});
+                email.putExtra(Intent.EXTRA_EMAIL, "jenteoh98@gmail.com");
                 email.putExtra(Intent.EXTRA_SUBJECT, Esubject);
                 email.putExtra(Intent.EXTRA_TEXT, Emessage);
 

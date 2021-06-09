@@ -93,6 +93,8 @@ public class UserHomepage extends AppCompatActivity {
         BBank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intentHome2blood = new Intent (UserHomepage.this, UserViewBloodBank.class);
+                startActivity(intentHome2blood);
 
             }
         });

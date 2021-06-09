@@ -1,12 +1,17 @@
 package com.example.bloodbank;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,11 +23,46 @@ import java.util.ArrayList;
 public class AdminViewRequestList extends AppCompatActivity {
 
 
+    private TextView names, ages,genders,emails,phones,locations,bloodGroups,reasons;
+    private DatabaseReference reff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_request_list);
 
+        names=(TextView)findViewById(R.id.user_name);
+        ages=(TextView)findViewById(R.id.user_age);
+        genders=(TextView)findViewById(R.id.user_gender);
+        emails=(TextView)findViewById(R.id.user_email);
+        phones=(TextView)findViewById(R.id.user_phone);
+        locations=(TextView)findViewById(R.id.user_location);
+        bloodGroups=(TextView)findViewById(R.id.user_blood_group);
+        reasons=(TextView)findViewById(R.id.user_reason);
+
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("id");
+
+
+        Log.d("Debuggggg",id.toString());
+        reff=FirebaseDatabase.getInstance().getReference().child("Request").child(id.toString());
+        reff.get().addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
+            @Override
+            public void onSuccess(DataSnapshot dataSnapshot) {
+                if (dataSnapshot!=null){
+                    if (dataSnapshot.exists()) {
+                        Request request = dataSnapshot.getValue(Request.class);
+                        names.setText(request.getName());
+                        ages.setText(request.getAge().toString());
+                        genders.setText(request.getGender());
+                        emails.setText(request.getEmail());
+                        phones.setText(request.getPhone());
+                        locations.setText(request.getLocation());
+                        bloodGroups.setText(request.getBloodGroup());
+                        reasons.setText(request.getReason());
+                    }
+                }
+            }
+        });
 
 
     }

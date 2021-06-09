@@ -5,7 +5,7 @@ public class Request {
     private Integer Age;
     private String Email;
     private String Gender;
-    private Long Phone;
+    private String Phone;
     private String Location;
     private String BloodGroup;
     private String Reason;
@@ -45,11 +45,11 @@ public class Request {
         Gender = gender;
     }
 
-    public Long getPhone() {
+    public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(Long phone) {
+    public void setPhone(String phone) {
         Phone = phone;
     }
 
@@ -75,5 +75,9 @@ public class Request {
 
     public void setReason(String reason) {
         Reason = reason;
+    }
+
+    public String toString(){
+        return this.Name;
     }
 }

@@ -1,12 +1,19 @@
 package com.example.bloodbank;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,34 +25,65 @@ import java.util.ArrayList;
 public class AdminRequestList extends AppCompatActivity {
 
     private ListView listView;
-    private DatabaseReference ref;
-    private ArrayList<String> list;
-    private ArrayAdapter<String> adapter;
-    private Request request;
+    private DatabaseReference firebaseDatabase;
+    private ArrayList<String> arrayList = new ArrayList<>();
+    private ArrayAdapter<String> arrayAdapter;
+    private ArrayList<String> arrayListid = new ArrayList<>();
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_list);
-        request = new Request();
-        listView = (ListView)findViewById(R.id.ListView);
-        ref = FirebaseDatabase.getInstance().getReference().child("Request");
-        list = new ArrayList<>();
-        adapter= new ArrayAdapter<String>(this, R.layout.activity_request_list, R.id.ListView, list);
-        ref.addValueEventListener(new ValueEventListener() {
+
+        firebaseDatabase = FirebaseDatabase.getInstance().getReference("Request");
+        listView=(ListView)findViewById(R.id.ListView);
+        arrayAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arrayList);
+        listView.setAdapter(arrayAdapter);
+        firebaseDatabase.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot ds:dataSnapshot.getChildren())
-                {
-                    request = ds.getValue(Request.class);
-                    list.add(request.getName());
-                }
-                listView.setAdapter(adapter);
+            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                String value = snapshot.getValue(Request.class).toString();
+                arrayList.add(value);
+                arrayListid.add(snapshot.getKey());
+                arrayAdapter.notifyDataSetChanged();
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position >= 0){
+                    Intent openViewList = new Intent(view.getContext(), AdminViewRequestList.class);
+                    Log.d(arrayListid.get(position), "Eroor Debug");
+                    openViewList.putExtra("id",arrayListid.get(position));
+                    startActivity(openViewList);
+                }
+            }
+        });
+
+
+
+
     }
-}
+    }
+

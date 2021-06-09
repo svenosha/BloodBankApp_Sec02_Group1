@@ -56,7 +56,6 @@ public class UserMakeRequest extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int agea=Integer.parseInt(age.getText().toString().trim());
-                Long phn=Long.parseLong(phone.getText().toString().trim());
                 request.setName(name.getText().toString().trim());
                 request.setGender(gender.getText().toString().trim());
                 request.setEmail(email.getText().toString().trim());
@@ -64,7 +63,7 @@ public class UserMakeRequest extends AppCompatActivity {
                 request.setBloodGroup(bloodGroup.getText().toString().trim());
                 request.setReason(reason.getText().toString().trim());
                 request.setAge(agea);
-                request.setPhone(phn);
+                request.setPhone(reason.getText().toString().trim());
                 reff.child(String.valueOf(maxid+1)).setValue(request);
                 Toast.makeText(UserMakeRequest.this,"submit successfully",Toast.LENGTH_LONG).show();
 

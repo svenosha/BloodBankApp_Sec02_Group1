@@ -98,26 +98,13 @@
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
-                <RadioGroup
-                    android:id="@+id/rg_gender"
+                <TextView
+                    android:id="@+id/tv_getGender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:background="#F9F1F0"
+                    android:ems="10" />
 
-                    <RadioButton
-                        android:id="@+id/rb_getMale"
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:text="Male"
-                        android:textSize="20sp"/>
-
-                    <RadioButton
-                        android:id="@+id/rb_getFemale"
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:text="Female"
-                        android:textSize="20sp"/>
-                </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
@@ -212,28 +199,7 @@
                     android:ems="10" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="5dp">
-
-                <TextView
-                    android:id="@+id/tv_password"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Password"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/tv_getPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#F9F1F0"
-                    android:ems="10" />
-            </LinearLayout>
+        
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -250,41 +216,12 @@
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
-                <RadioGroup
-                    android:id="@+id/rg_blood"
+                 <TextView
+                    android:id="@+id/tv_getBlood"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/rb_A"
-                        android:layout_width="50dp"
-                        android:layout_height="30dp"
-                        android:text="A"
-                        android:textSize="16sp" />
-
-                    <RadioButton
-                        android:id="@+id/rb_B"
-                        android:layout_width="50dp"
-                        android:layout_height="30dp"
-                        android:text="B"
-                        android:textSize="16sp" />
-
-                    <RadioButton
-                        android:id="@+id/rb_AB"
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:text="AB"
-                        android:textSize="16sp" />
-
-                    <RadioButton
-                        android:id="@+id/rb_O"
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:text="O"
-                        android:textSize="16sp" />
-
-                </RadioGroup>
+                    android:background="#F9F1F0"
+                    android:ems="10" />
 
             </LinearLayout>
 

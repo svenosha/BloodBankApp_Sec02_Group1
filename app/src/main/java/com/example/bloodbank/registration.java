@@ -93,6 +93,7 @@ public class registration extends AppCompatActivity {
             @SuppressLint("ResourceType")
             @Override
             public void onClick(View v) {
+
                 String nama = name.getText().toString().trim();
                 String umur = age.getText().toString().trim();
                 String lokasi = location.getText().toString().trim();
@@ -214,6 +215,7 @@ public class registration extends AppCompatActivity {
 
 
                             reference.child(String.valueOf(id+1)).setValue(member);
+//                            reference.child("Member").child(userId).setValue(member);
 
                             Toast.makeText(registration.this, "User Created", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),userLogin.class));

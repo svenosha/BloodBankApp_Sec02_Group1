@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -40,7 +39,6 @@ public class registration extends AppCompatActivity {
     RadioGroup gender, bloodType;
     RadioButton male, female, bloodA, bloodB, bloodAB, bloodO;
     Button btnRegister;
-    CheckBox donor;
 
     private FirebaseAuth mAuth;
 
@@ -71,7 +69,6 @@ public class registration extends AppCompatActivity {
         bloodB = findViewById(R.id.rb_B);
         bloodAB = findViewById(R.id.rb_AB);
         bloodO = findViewById(R.id.rb_O);
-        donor = findViewById(R.id.cb_reqDonor);
         btnRegister = findViewById(R.id.btn_register);
 
         mAuth = FirebaseAuth.getInstance();

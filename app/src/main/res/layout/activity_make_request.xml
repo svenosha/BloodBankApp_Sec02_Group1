@@ -194,7 +194,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:text="Gender      :" />
+            android:text="Reason     :" />
 
         <EditText
             android:id="@+id/user_reason"

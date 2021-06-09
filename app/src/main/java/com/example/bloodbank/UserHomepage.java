@@ -84,6 +84,8 @@ public class UserHomepage extends AppCompatActivity {
         BDonor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intentHome2list = new Intent (UserHomepage.this, UserBloodDonorList.class);
+                startActivity(intentHome2list);
 
             }
         });

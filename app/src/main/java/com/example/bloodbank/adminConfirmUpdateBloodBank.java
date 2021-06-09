@@ -40,7 +40,7 @@ public class adminConfirmUpdateBloodBank extends AppCompatActivity {
         reff = FirebaseDatabase.getInstance().getReference().child("BloodBank");
         bloodbank = new BloodBank();
 
-        confirm.setOnClickListener(new View.OnClickListener() {
+        /*confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int aplus = Integer.parseInt(aPlusAmt.getText().toString().trim());
@@ -63,7 +63,7 @@ public class adminConfirmUpdateBloodBank extends AppCompatActivity {
                 bloodbank.setBMinus(bminus);
                 bloodbank.setOMinus(ominus);
                 bloodbank.setABMinus(abminus);
-                BloodBank blooodbank = new BloodBank;
+                BloodBank blooodbank = new BloodBank();
                 blooodbank.put("APlus",aplus,"BPlus",bplus,,"OPlus",oplus,"ABPlus",abplus,"AMinus",aminus,"BMinus",bminus,"OMinus",ominus,"ABMinus",abminus);
 
                 reff.child("BloodBank").updateChildren(blooodbank).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -77,6 +77,6 @@ public class adminConfirmUpdateBloodBank extends AppCompatActivity {
 
 
             }
-        });
+        });*/
     }
 }

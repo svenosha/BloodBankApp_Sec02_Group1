@@ -38,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openUserLogin(){
-        Intent intentUserLogin = new Intent (this, userLogin.class);
-        startActivity(intentUserLogin);
+        //Intent intentUserLogin = new Intent (this, userLogin.class);
+        //startActivity(intentUserLogin);
+        Intent intenttry = new Intent (this, UserViewBloodBank.class);
+        startActivity(intenttry);
     }
 
     public void openAdminLogin(){

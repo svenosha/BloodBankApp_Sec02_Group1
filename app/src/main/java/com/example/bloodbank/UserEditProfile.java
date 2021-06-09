@@ -104,21 +104,6 @@ public class UserEditProfile extends AppCompatActivity {
             String user_email = intent.getStringExtra("email");
             String user_username = intent.getStringExtra("username");
 
-            if (male.isChecked()) {
-                member.setGender(m);
-            } else {
-                member.setGender(f);
-            }
-
-            if (bloodA.isChecked()) {
-                member.setBloodtype(a);
-            } else if (bloodB.isChecked()) {
-                member.setBloodtype(b);
-            } else if (bloodAB.isChecked()) {
-                member.setBloodtype(ab);
-            } else {
-                member.setBloodtype(o);
-            }
 //        String user_gender = intent.getStringExtra("gender");
 //        String user_bloodtype = intent.getStringExtra("bloodtype");
 

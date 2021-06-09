@@ -43,6 +43,14 @@ public class UserBloodDonorList extends AppCompatActivity {
                     Member info = snapshot1.getValue(Member.class);
                     String text = info.getName() + " : " + info.getBloodtype();
                     list.add(text);
+                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                            Intent i =new Intent(UserBloodDonorList.this, UserDonorDetail.class);
+                            startActivity(i);
+
+                        }
+                    });
                 }
                 adapter.notifyDataSetChanged();
             }
@@ -52,13 +60,13 @@ public class UserBloodDonorList extends AppCompatActivity {
 
             }
         });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i =new Intent(UserBloodDonorList.this, UserDonorDetail.class);
                 startActivity(i);
 
             }
-        });
+        });*/
     }
 }

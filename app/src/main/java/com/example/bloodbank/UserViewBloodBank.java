@@ -83,8 +83,8 @@ public class UserViewBloodBank extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //intent for email
-                // Intent intentEmail = new Intent(Intent.ACTIO)
-                //startActivity(intentemail);
+                Intent intentEmail = new Intent(UserViewBloodBank.this,Email.class);
+                startActivity(intentEmail);
             }
         });
 

@@ -1,9 +1,12 @@
 package com.example.bloodbank;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -25,10 +28,12 @@ public class AdminViewRequestList extends AppCompatActivity {
 
     private TextView names, ages,genders,emails,phones,locations,bloodGroups,reasons;
     private DatabaseReference reff;
+    private Button btnphone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_request_list);
+        btnphone=findViewById(R.id.btn_phone);
 
         names=(TextView)findViewById(R.id.user_name);
         ages=(TextView)findViewById(R.id.user_age);
@@ -63,6 +68,16 @@ public class AdminViewRequestList extends AppCompatActivity {
                 }
             }
         });
+
+//        btnphone.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String mobileNo =
+//                Intent intentcall = new Intent(Intent.ACTION_DIAL);
+//                intent.setData(Uri.parse(mobileNo));
+//                startActivity(intentcall);
+//            }
+//        });
 
 
     }

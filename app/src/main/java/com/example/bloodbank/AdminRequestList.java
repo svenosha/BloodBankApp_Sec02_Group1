@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -29,10 +30,12 @@ public class AdminRequestList extends AppCompatActivity {
     private ArrayList<String> arrayList = new ArrayList<>();
     private ArrayAdapter<String> arrayAdapter;
     private ArrayList<String> arrayListid = new ArrayList<>();
+    private SearchView searchView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_list);
+        searchView=findViewById(R.id.search);
 
         firebaseDatabase = FirebaseDatabase.getInstance().getReference("Request");
         listView=(ListView)findViewById(R.id.ListView);
@@ -82,6 +85,19 @@ public class AdminRequestList extends AppCompatActivity {
         });
 
 
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                AdminRequestList.this.arrayAdapter.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                AdminRequestList.this.arrayAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });
 
 
     }

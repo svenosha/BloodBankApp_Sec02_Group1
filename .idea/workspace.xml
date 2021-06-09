@@ -28,6 +28,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminDonorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminDonorDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserDonorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserDonorDetail.java" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_profile.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminBloodDonorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +76,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="RBDBB18B09151562" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-02T15:24:58.557Z" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-01T08:33:32.178Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -183,8 +195,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1623277430070">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="392" y="0" key="#app" timestamp="1623272238106">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="392" y="0" key="#app/0.0.1366.738@0.0.1366.738" timestamp="1623272238106" />
+    <state x="146" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623271762076">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="146" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1623271762076" />
+    <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1623251363863">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1623251363863" />
     <state x="686" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1623277430070" />
@@ -205,9 +225,10 @@
     </state>
     <state x="310" y="148" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1622549473088" />
     <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1621182983240" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1622355669829">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="488" y="150" key="FileChooserDialogImpl" timestamp="1623272289185">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="488" y="150" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1623272289185" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622355669829" />
     <state width="1293" height="175" key="GridCell.Tab.0.bottom" timestamp="1622560834375">
       <screen x="0" y="0" width="1366" height="728" />
@@ -225,6 +246,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1293" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1622560834375" />
+    <state x="263" y="111" key="IDE.errors.dialog" timestamp="1623270480642">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="263" y="111" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1623270480642" />
     <state x="184" y="13" key="SettingsEditor" timestamp="1622644098440">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -233,10 +258,15 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1622667537617" />
-    <state x="579" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621185721419">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="515" y="292" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623272146371">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="515" y="292" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1623272146371" />
     <state x="579" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621185721419" />
+    <state x="402" y="157" key="git4idea.merge.GitMergeDialog" timestamp="1623272104445">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="402" y="157" key="git4idea.merge.GitMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1623272104445" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1622654678192">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

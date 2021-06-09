@@ -111,8 +111,8 @@
 
     <TextView
         android:id="@+id/tv_AMinus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
         android:layout_marginBottom="20dp"
@@ -127,8 +127,8 @@
 
     <TextView
         android:id="@+id/tv_BPlus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
         android:layout_marginBottom="21dp"
@@ -143,8 +143,8 @@
 
     <TextView
         android:id="@+id/tv_APlus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginStart="61dp"
         android:layout_marginLeft="61dp"
         android:layout_marginBottom="17dp"
@@ -159,8 +159,8 @@
 
     <TextView
         android:id="@+id/tv_BMinus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
         android:layout_marginBottom="120dp"
@@ -175,8 +175,8 @@
 
     <EditText
         android:id="@+id/ed_APlusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="69dp"
         android:layout_marginRight="69dp"
         android:layout_marginBottom="17dp"
@@ -205,8 +205,8 @@
 
     <TextView
         android:id="@+id/tv_OPlus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:background="#F79489"
         android:text=" O+"
         android:textColor="@color/black"
@@ -218,8 +218,8 @@
 
     <TextView
         android:id="@+id/tv_ABPlus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:background="#F79489"
         android:text="AB+"
         android:textColor="@color/black"
@@ -231,8 +231,8 @@
 
     <TextView
         android:id="@+id/tv_OMinus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:background="#F79489"
         android:text=" O-"
         android:textColor="@color/black"
@@ -244,8 +244,8 @@
 
     <TextView
         android:id="@+id/tv_ABMinus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:background="#F79489"
         android:text=" AB-"
         android:textColor="@color/black"
@@ -257,8 +257,8 @@
 
     <EditText
         android:id="@+id/ed_OMinusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="81dp"
         android:layout_marginRight="81dp"
         android:layout_marginBottom="20dp"
@@ -272,8 +272,8 @@
 
     <EditText
         android:id="@+id/ed_ABMinusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="81dp"
         android:layout_marginRight="81dp"
         android:layout_marginBottom="120dp"
@@ -287,8 +287,8 @@
 
     <EditText
         android:id="@+id/ed_OPlusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="81dp"
         android:layout_marginRight="81dp"
         android:layout_marginBottom="17dp"
@@ -302,8 +302,8 @@
 
     <EditText
         android:id="@+id/ed_ABPlusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="81dp"
         android:layout_marginRight="81dp"
         android:layout_marginBottom="21dp"
@@ -317,8 +317,8 @@
 
     <EditText
         android:id="@+id/ed_AMinusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginBottom="20dp"
@@ -332,8 +332,8 @@
 
     <EditText
         android:id="@+id/ed_BPlusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginBottom="21dp"
@@ -347,8 +347,8 @@
 
     <EditText
         android:id="@+id/ed_BMinusAmount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginBottom="31dp"

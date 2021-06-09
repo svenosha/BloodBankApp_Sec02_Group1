@@ -26,19 +26,27 @@
   <component name="ChangeListManager">
     <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_profile.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminBloodDonorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RBDBB18B09151562]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_6_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

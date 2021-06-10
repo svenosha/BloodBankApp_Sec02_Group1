@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,10 +21,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.lang.reflect.Member;
 
 public class UserMakeRequest extends AppCompatActivity {
-   private EditText name,age,gender,email,phone,location,bloodGroup,reason;
-   private Button submit;
-   private DatabaseReference reff;
-   private Request request;
+    private EditText name,age,gender,email,phone,location,bloodGroup,reason;
+    private Button submit;
+    private DatabaseReference reff;
+    private Request request;
     private long maxid=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +68,7 @@ public class UserMakeRequest extends AppCompatActivity {
                 request.setPhone(reason.getText().toString().trim());
                 reff.child(String.valueOf(maxid+1)).setValue(request);
                 Toast.makeText(UserMakeRequest.this,"submit successfully",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(),UserHomepage.class));
 
 
             }

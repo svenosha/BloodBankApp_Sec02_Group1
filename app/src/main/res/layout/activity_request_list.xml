@@ -20,22 +20,23 @@
         android:textSize="32dp"
         android:textStyle="bold" />
 
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ADADC9"
-        app:queryHint="Search Name"
+        android:layout_width="150dp"
+        app:queryHint="Search"
         app:iconifiedByDefault="false"
-        tools:ignore="InvalidId">
-
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:background="#ADADC9">
     </androidx.appcompat.widget.SearchView>
 
     <ListView
         android:id="@+id/ListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="29dp"
         android:layout_marginTop="20dp"
         android:background="#FBECC4"
         android:orientation="vertical"></ListView>

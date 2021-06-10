@@ -81,7 +81,7 @@ public class adminLogin extends AppCompatActivity {
             @Override
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                startActivity(new Intent(getApplicationContext(), UserHomepage.class));
+                startActivity(new Intent(getApplicationContext(), AdminHomepage.class));
             }
 
             @Override

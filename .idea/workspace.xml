@@ -26,8 +26,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserDonorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserDonorDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_donor_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_donor_detail.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1scoEX2po3ewYs9S3fE9AiK4JQn" />
   <component name="ProjectLevelVcsManager">
@@ -236,6 +239,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="263" y="111" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1623270480642" />
+    <state x="339" y="496" key="MultipleFileMergeDialog" timestamp="1623282651508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="339" y="496" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623282651508" />
     <state x="184" y="13" key="SettingsEditor" timestamp="1622644098440">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -253,9 +260,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="402" y="157" key="git4idea.merge.GitMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1623272104445" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1622654678192">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="476" y="233" key="run.anything.popup" timestamp="1623287566065">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1622654678192" />
+    <state x="476" y="233" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623287566065" />
   </component>
 </project>

@@ -45,6 +45,13 @@ public class Member {
         this.name = name;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
 
     public String getGender() {
@@ -55,12 +62,32 @@ public class Member {
         this.gender = gender;
     }
 
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     public String getBloodtype() {
         return bloodtype;
     }
 
     public void setBloodtype(String bloodtype) {
         this.bloodtype = bloodtype;
+    }
+
+    public String toString(){
+        return this.name;
     }
 
     @Exclude

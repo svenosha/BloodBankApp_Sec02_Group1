@@ -27,17 +27,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserEditProfile.java" afterDir="false" />
-    </list>
+    <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_API_28]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -54,6 +50,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1scoEX2po3ewYs9S3fE9AiK4JQn" />
   <component name="ProjectLevelVcsManager">
@@ -69,7 +66,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-01T08:33:32.178Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BloodBankApp_Sec02_Group1-manageAccount" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -215,13 +212,14 @@
     </state>
     <state x="310" y="148" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1622549473088" />
     <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1621182983240" />
-    <state x="488" y="150" key="FileChooserDialogImpl" timestamp="1623272289185">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1623295474443">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="488" y="150" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1623272289185" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622355669829" />
-    <state width="1293" height="174" key="GridCell.Tab.0.bottom" timestamp="1623296987693">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623295474443" />
+    <state width="1293" height="175" key="GridCell.Tab.0.bottom" timestamp="1622560834375">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1293" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1623296987693" />
     <state width="1293" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622560834375" />
@@ -244,6 +242,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="263" y="111" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1623270480642" />
+    <state x="339" y="496" key="MultipleFileMergeDialog" timestamp="1623282651508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="339" y="496" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623282651508" />
     <state x="184" y="13" key="SettingsEditor" timestamp="1622644098440">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -261,9 +263,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="402" y="157" key="git4idea.merge.GitMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1623272104445" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1622654678192">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="476" y="233" key="run.anything.popup" timestamp="1623287566065">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1622654678192" />
+    <state x="476" y="233" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623287566065" />
   </component>
 </project>

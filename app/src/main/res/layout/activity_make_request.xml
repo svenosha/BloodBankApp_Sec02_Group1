@@ -80,13 +80,34 @@
             android:textSize="20dp"
             android:text="Gender      :" />
 
-        <EditText
-            android:id="@+id/user_gender"
+        <RadioGroup
+            android:id="@+id/rggender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbmale"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Male"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/rbfemale"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Female"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+<!--        <EditText-->
+<!--            android:id="@+id/user_gender"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -133,6 +154,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -151,11 +173,19 @@
 
         <EditText
             android:id="@+id/user_location"
-            android:layout_width="match_parent"
+            android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="" />
+
+        <ImageView
+            android:id="@+id/locateSearch"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_search_category_default" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -173,13 +203,49 @@
             android:textColor="@color/black"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/user_blood_group"
+        <RadioGroup
+            android:id="@+id/rgblood"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbA"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="A"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbB"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="B"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbAB"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="AB"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbO"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="O"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+<!--        <EditText-->
+<!--            android:id="@+id/user_blood_group"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="" />-->
     </LinearLayout>
 
     <LinearLayout

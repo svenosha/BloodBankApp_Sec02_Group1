@@ -246,6 +246,8 @@ public class registration extends AppCompatActivity implements LocationListener 
             }
         });
 
+
+    //create sensor location
         if (ContextCompat.checkSelfPermission(registration.this, Manifest.permission.ACCESS_FINE_LOCATION)
             != PackageManager.PERMISSION_GRANTED){
                 ActivityCompat.requestPermissions(registration.this,new String[]{

@@ -35,11 +35,11 @@
         android:id="@+id/ListView"
         android:layout_width="350dp"
         android:layout_height="380dp"
-        android:orientation="vertical"
         android:layout_marginLeft="29dp"
         android:layout_marginTop="20dp"
         android:background="#FBECC4"
-        android:orientation="vertical"></ListView>
+        android:orientation="vertical">
+</ListView>
 
 
 </LinearLayout>

@@ -24,13 +24,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="" />
+    <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_request_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_request_list.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_6_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -63,7 +66,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-01T08:33:32.178Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BloodBankApp_Sec02_Group1-manageAccount" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -195,10 +198,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1622549731761" />
-    <state x="100" y="100" width="1166" height="528" key="AVDManager" timestamp="1622542308689">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="141" y="143" width="1639" height="755" key="AVDManager" timestamp="1623308495747">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1166" height="528" key="AVDManager/0.0.1366.728@0.0.1366.728" timestamp="1622542308689" />
+    <state x="141" y="143" width="1639" height="755" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1623308495747" />
     <state x="263" y="118" key="AndroidCreateResourceDirectoryDialog" timestamp="1622549684985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

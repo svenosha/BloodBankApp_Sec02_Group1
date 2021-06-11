@@ -20,7 +20,7 @@ public class UserDonorDetail extends AppCompatActivity {
 
     private TextView location, name, age, btype, gender;
     private Button email, phone;
-    DatabaseReference reff;
+    DatabaseReference database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +40,8 @@ public class UserDonorDetail extends AppCompatActivity {
 
 
         Log.d("Debuggggg",id.toString());
-        reff=FirebaseDatabase.getInstance().getReference().child("Member").child(id.toString());
-        reff.get().addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
+        database=FirebaseDatabase.getInstance().getReference().child("Member").child(id.toString());
+        database.get().addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
             @Override
             public void onSuccess(DataSnapshot dataSnapshot) {
                 if (dataSnapshot!=null){
@@ -52,27 +52,35 @@ public class UserDonorDetail extends AppCompatActivity {
                         gender.setText(member.getGender());
                         btype.setText(member.getBloodtype());
                         location.setText(member.getLocation());
+
+                        phone.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                String number = ""+ member.getPhone();
+                                Intent intentphone = new Intent(Intent.ACTION_DIAL);
+                                intentphone.setData(Uri.parse("tel:"+number));
+                                startActivity(intentphone);
+                            }
+                        });
                     }
                 }
             }
+
         });
 
-        email.setOnClickListener(new View.OnClickListener() {
+
+
+       /* email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //intent for email
                 Intent intentEmail = new Intent(UserDonorDetail.this,Email.class);
                 startActivity(intentEmail);
             }
-        });
+        });*/
 
 
-        phone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentphone = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:01138134345"));
-                startActivity(intentphone);
-            }
-        });
+
+
     }
 }

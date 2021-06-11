@@ -1,15 +1,18 @@
 package com.example.bloodbank;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,30 +23,43 @@ import java.util.ArrayList;
 
 public class AdminBloodDonorList extends AppCompatActivity {
 
+    private DatabaseReference Database;
+    private ArrayList<String> arrayList = new ArrayList<>();
+    private ArrayAdapter<String> arrayAdapter;
+    private ArrayList<String> arrayListid = new ArrayList<>();
     ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_blood_donor_list);
+        setContentView(R.layout.activity_admin_blood_donor_list);
 
-        listView = findViewById(R.id.lv_us_donor);
-
-        final ArrayList<String> list = new ArrayList<>();
-        final ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.list_item, list);
-        listView.setAdapter(adapter);
-
-        //get Member Name list from Database
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Member");
-        reference.addValueEventListener(new ValueEventListener() {
+        Database = FirebaseDatabase.getInstance().getReference("Member");
+        listView=(ListView)findViewById(R.id.lv_ad_donor);
+        arrayAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arrayList);
+        listView.setAdapter(arrayAdapter);
+        Database.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                list.clear();
-                for (DataSnapshot snapshot1 : snapshot.getChildren()){
-                    Member info = snapshot1.getValue(Member.class);
-                    String text = info.getName() + " : " + info.getBloodtype();
-                    list.add(text);
-                }
-                adapter.notifyDataSetChanged();
+            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                String value = snapshot.getValue(Member.class).toString();
+                arrayList.add(value);
+                arrayListid.add(snapshot.getKey());
+                arrayAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
             }
 
             @Override
@@ -52,13 +68,34 @@ public class AdminBloodDonorList extends AppCompatActivity {
             }
         });
 
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i =new Intent(AdminBloodDonorList.this, AdminDonorDetails.class);
-                startActivity(i);
-
+                if (position >= 0){
+                    Intent openViewList = new Intent(view.getContext(), AdminDonorDetails.class);
+                    Log.d(arrayListid.get(position), "Eroor Debug");
+                    openViewList.putExtra("id",arrayListid.get(position));
+                    startActivity(openViewList);
+                }
             }
         });
+
+
+       /* searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                AdminRequestList.this.arrayAdapter.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                AdminRequestList.this.arrayAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });*/
+
+
     }
 }

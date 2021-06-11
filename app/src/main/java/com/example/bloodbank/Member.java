@@ -37,7 +37,7 @@ public class Member {
 
 
 
-        public String getName() {
+    public String getName() {
         return name;
     }
 
@@ -89,6 +89,11 @@ public class Member {
     public String toString(){
         return this.name;
     }
+
+    public String number(){
+        return this.phone;
+    }
+
 
     @Exclude
     public Map<String, Object> toMap() {

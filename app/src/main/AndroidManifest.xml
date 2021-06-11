@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodBank">
-        <activity android:name=".AdminUserDetails"></activity>
+        <activity android:name=".Email"></activity>
         <activity android:name=".AdminUserList" />
         <activity android:name=".UserEditProfile" />
         <activity android:name=".UserViewProfile" />
@@ -25,9 +25,6 @@
         <activity android:name=".registration" />
         <activity android:name=".adminLogin" />
         <activity android:name=".userLogin" />
-        <activity android:name=".UserMakeRequest"/>
-        <activity android:name=".AdminRequestList"/>
-        <activity android:name=".AdminViewRequestList"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

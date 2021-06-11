@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -21,6 +22,7 @@ public class AdminDonorDetails extends AppCompatActivity {
     private TextView location, name, age, btype, gender;
     private Button email, phone, delete;
     DatabaseReference database;
+    private Object String;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +65,41 @@ public class AdminDonorDetails extends AppCompatActivity {
                                 startActivity(intentphone);
                             }
                         });
+                        //recheck the toast
+                        delete.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                dataSnapshot.getRef().removeValue();
+                                Toast.makeText(getApplicationContext(), "The Donor is deleted", Toast.LENGTH_SHORT).show();
+                                Intent intentdetail2user = new Intent (AdminDonorDetails.this, AdminHomepage.class);
+                                startActivity(intentdetail2user);
+                            }
+                        });
+
+                        /*email.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                String addresses = ""+ member.getEmail();
+                                String subject ="I would like to request blood donation";
+                                public void composeEmail(String[] addresses, String subject){
+                                    Intent intent =new Intent(Intent.ACTION_SENDTO);
+                                    intent.setType("");
+                                    intent.putExtra(Intent.EXTRA_EMAIL,addresses);
+                                    intent.putExtra(Intent.EXTRA_SUBJECT,subject);
+                                    if(intent.resolveActivity(getPackageManager()) !=null){
+                                        startActivity(intent);
+                                    }
+
+                                }
+
+                            }
+                        });*/
                     }
                 }
             }
         });
+
+
 
         /*email.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -53,6 +53,13 @@ public class Member {
         this.phone = phone;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getGender() {
         return gender;
@@ -93,6 +100,8 @@ public class Member {
     public String number(){
         return this.phone;
     }
+
+    public String email() { return this.email; }
 
 
     @Exclude

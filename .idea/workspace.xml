@@ -27,13 +27,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-
+    <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminManageBloodBank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/BloodBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/BloodBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewBloodBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewBloodBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/adminConfirmUpdateBloodBank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_confirm_update_blood_bank.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_manage_blood_bank.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_email.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_email.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_blood_bank.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_blood_bank.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_6_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -74,6 +87,9 @@
       <recent name="com.example.bloodbank" />
     </key>
     <key name="android.template.1349456136">
+      <recent name="com.example.bloodbank" />
+    </key>
+    <key name="android.template.-1957004878">
       <recent name="com.example.bloodbank" />
     </key>
     <key name="android.template.-1196981551">
@@ -189,16 +205,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="146" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1623271762076" />
-    <state x="1854" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1623291831300">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state x="686" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1623410902373">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1854" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1623291831300" />
     <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1623251363863" />
-    <state x="686" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1623277430070" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622549731761">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="686" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1623410902373" />
+    <state x="580" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623408180435">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1622549731761" />
+    <state x="580" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623408180435" />
     <state x="141" y="143" width="1639" height="755" key="AVDManager" timestamp="1623308495747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

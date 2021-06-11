@@ -1,10 +1,6 @@
 package com.example.bloodbank;
 
-import android.widget.EditText;
-
-import java.util.Map;
-
-public class BloodBank{
+public class BloodBank {
     private String Location;
     private String Phone;
     private String Email;
@@ -16,6 +12,9 @@ public class BloodBank{
     private Integer BMinus;
     private Integer OMinus;
     private Integer ABMinus;
+
+    public BloodBank() {
+    }
 
     public String getLocation() {
         return Location;
@@ -103,12 +102,5 @@ public class BloodBank{
 
     public void setABMinus(Integer ABMinus) {
         this.ABMinus = ABMinus;
-    }
-
-    public BloodBank() {
-
-    }
-
-    public void put(String location, EditText location1, String s, EditText phone, String email, EditText editText, String aPlus, int bplus, String bPlus, int i) {
     }
 }

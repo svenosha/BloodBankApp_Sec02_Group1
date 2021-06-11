@@ -18,19 +18,15 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UserViewBloodBank extends AppCompatActivity {
 
-    //user view blood bank amount
-    //declaration
     private EditText location, aPlusAmt, bPlusAmt, aMinusAmt, bMinusAmt, oPlusAmt, abPlusAmt, oMinusAmt, abMinusAmt;
     private Button email, phone;
     DatabaseReference reff;
-    BloodBank bloodbank;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_view_blood_bank);
-
-        //manage blood bank module for user
 
         location = findViewById(R.id.ed_location);
         aPlusAmt = findViewById(R.id.ed_APlusAmount);
@@ -41,16 +37,16 @@ public class UserViewBloodBank extends AppCompatActivity {
         abPlusAmt = findViewById(R.id.ed_ABPlusAmount);
         oMinusAmt = findViewById(R.id.ed_OMinusAmount);
         abMinusAmt = findViewById(R.id.ed_ABMinusAmount);
-        email = findViewById(R.id.btn_email);
-        phone = findViewById(R.id.btn_phone);
-        reff = FirebaseDatabase.getInstance().getReference().child("BloodBank");
-        bloodbank = new BloodBank();
+        email = findViewById(R.id.btn_Email);
+        phone = findViewById(R.id.btn_Phone);
+        reff = FirebaseDatabase.getInstance().getReference().child("BloodBank").child("penang");
+
 
         reff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 //get value
-                String Location=dataSnapshot.child("loc").getValue().toString();
+                String Location=dataSnapshot.child("Location").getValue().toString();
                 String APlus = dataSnapshot.child("APlus").getValue().toString();
                 String BPlus = dataSnapshot.child("BPlus").getValue().toString();
                 String OPlus = dataSnapshot.child("OPlus").getValue().toString();
@@ -74,12 +70,14 @@ public class UserViewBloodBank extends AppCompatActivity {
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
+
+
         });
 
-        email.setOnClickListener(new View.OnClickListener() {
+        email.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 //intent for email
@@ -89,13 +87,12 @@ public class UserViewBloodBank extends AppCompatActivity {
         });
 
 
-        phone.setOnClickListener(new View.OnClickListener() {
+       phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentphone = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:01138134345"));
                 startActivity(intentphone);
             }
         });
-
     }
 }

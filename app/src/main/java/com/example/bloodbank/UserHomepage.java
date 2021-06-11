@@ -21,6 +21,8 @@ public class UserHomepage extends AppCompatActivity {
     private TextView username;
     private Button profile, BDonor, BBank, btnMakeRequest;
     DatabaseReference reference;
+    long id=0;
+    Member member;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,20 +44,20 @@ public class UserHomepage extends AppCompatActivity {
 
 //                reference = FirebaseDatabase.getInstance().getReference().child("Member").child("1");
 
-                reference = FirebaseDatabase.getInstance().getReference().child("Member").child("1");
+                reference = FirebaseDatabase.getInstance().getReference().child("Member").child(String.valueOf(id+1));
                 reference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
 
-                            String namefromDB = snapshot.child("name").getValue().toString();
-                            String agefromDB = snapshot.child("age").getValue().toString();
-                            String genderfromDB = snapshot.child("gender").getValue().toString();
-                            String phonefromDB = snapshot.child("phone").getValue().toString();
-                            String emailfromDB = snapshot.child("email").getValue().toString();
-                            String locationfromDB = snapshot.child("location").getValue().toString();
-                            String usernamefromDB = snapshot.child("username").getValue().toString();
-                            String bloodtypefromDB = snapshot.child("bloodtype").getValue().toString();
+                        String namefromDB = snapshot.child("name").getValue().toString();
+                        String agefromDB = snapshot.child("age").getValue().toString();
+                        String genderfromDB = snapshot.child("gender").getValue().toString();
+                        String phonefromDB = snapshot.child("phone").getValue().toString();
+                        String emailfromDB = snapshot.child("email").getValue().toString();
+                        String locationfromDB = snapshot.child("location").getValue().toString();
+                        String usernamefromDB = snapshot.child("username").getValue().toString();
+                        String bloodtypefromDB = snapshot.child("bloodtype").getValue().toString();
 
                             Intent intentHome2profile = new Intent(UserHomepage.this, UserViewProfile.class);
 
@@ -93,6 +95,8 @@ public class UserHomepage extends AppCompatActivity {
         BBank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intentHome2blood = new Intent (UserHomepage.this, UserViewBloodBank.class);
+                startActivity(intentHome2blood);
 
             }
         });

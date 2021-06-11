@@ -1,12 +1,20 @@
 package com.example.bloodbank;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -15,6 +23,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -28,17 +38,23 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
+import java.util.Locale;
 import java.util.regex.Pattern;
 
 
-public class registration extends AppCompatActivity {
+
+
+public class registration extends AppCompatActivity implements LocationListener {
 
     TextView tvRegistration;
     ProgressBar progressBar;
-    EditText name, age, location, phone, email, username, password;
+    EditText name, age, locations, phone, email, username, password;
     RadioGroup gender, bloodType;
     RadioButton male, female, bloodA, bloodB, bloodAB, bloodO;
     Button btnRegister;
+    ImageView gps;
+    LocationManager locationManager;
 
     private FirebaseAuth mAuth;
 
@@ -56,7 +72,7 @@ public class registration extends AppCompatActivity {
         tvRegistration = findViewById(R.id.tv_registration);
         name = findViewById(R.id.et_name);
         age = findViewById(R.id.et_age);
-        location = findViewById(R.id.et_location);
+        locations = findViewById(R.id.et_location);
         phone = findViewById(R.id.et_phone);
         email = findViewById(R.id.et_email);
         username = findViewById(R.id.et_userUsername);
@@ -70,6 +86,7 @@ public class registration extends AppCompatActivity {
         bloodAB = findViewById(R.id.rb_AB);
         bloodO = findViewById(R.id.rb_O);
         btnRegister = findViewById(R.id.btn_register);
+        gps = findViewById(R.id.locate);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -93,9 +110,10 @@ public class registration extends AppCompatActivity {
             @SuppressLint("ResourceType")
             @Override
             public void onClick(View v) {
+
                 String nama = name.getText().toString().trim();
                 String umur = age.getText().toString().trim();
-                String lokasi = location.getText().toString().trim();
+                String lokasi = locations.getText().toString().trim();
                 String telefon = phone.getText().toString().trim();
                 String emel = email.getText().toString().trim();
                 String uname = username.getText().toString().trim();
@@ -132,8 +150,8 @@ public class registration extends AppCompatActivity {
                 }
 
                 if (lokasi.isEmpty()) {
-                    location.setError("Location is Required");
-                    location.requestFocus();
+                    locations.setError("Location is Required");
+                    locations.requestFocus();
                     return;
                 }
 
@@ -214,6 +232,7 @@ public class registration extends AppCompatActivity {
 
 
                             reference.child(String.valueOf(id+1)).setValue(member);
+//                            reference.child("Member").child(userId).setValue(member);
 
                             Toast.makeText(registration.this, "User Created", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),userLogin.class));
@@ -226,5 +245,65 @@ public class registration extends AppCompatActivity {
                 });
             }
         });
+
+
+    //create sensor location
+        if (ContextCompat.checkSelfPermission(registration.this, Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(registration.this,new String[]{
+                        Manifest.permission.ACCESS_FINE_LOCATION
+                }, 100);
+            }
+
+
+        gps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getLocation();
+            }
+        });
+    }
+
+    @SuppressLint("MissingPermission")
+    private void getLocation() {
+        try {
+            locationManager = (LocationManager) getApplicationContext().getSystemService(LOCATION_SERVICE);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000,5,registration.this);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
+
+    @Override
+    public void onLocationChanged(@NonNull Location location) {
+        Toast.makeText(this,""+location.getLatitude()+","+location.getLongitude(), Toast.LENGTH_SHORT).show();
+        try {
+            Geocoder geocoder=new Geocoder(registration.this, Locale.getDefault());
+            List<Address> adsresses = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),1);
+            String address = adsresses.get(0).getAddressLine(0);
+
+            locations.setText(address);
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(@NonNull String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(@NonNull String provider) {
+
     }
 }

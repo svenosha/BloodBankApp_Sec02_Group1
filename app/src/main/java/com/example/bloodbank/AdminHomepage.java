@@ -39,13 +39,13 @@ public class AdminHomepage extends AppCompatActivity {
         });
 
 
-       /* bloodList.setOnClickListener(new View.OnClickListener() {
+       bloodList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentHome2blood = new Intent (AdminHomepage.this, AdminManageBloodBank.class);
                 startActivity(intentHome2blood);
             }
-        });*/
+        });
 
         btnrequestlist.setOnClickListener(new View.OnClickListener() {
             @Override

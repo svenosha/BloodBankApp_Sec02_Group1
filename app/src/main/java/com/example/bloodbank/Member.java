@@ -103,6 +103,9 @@ public class Member {
 
     public String email() { return this.email; }
 
+    public String setUsername(String username) { return this.username = username;}
+
+    public String getUser() { return username; }
 
     @Exclude
     public Map<String, Object> toMap() {
@@ -118,4 +121,5 @@ public class Member {
 
         return result;
     }
+
 }

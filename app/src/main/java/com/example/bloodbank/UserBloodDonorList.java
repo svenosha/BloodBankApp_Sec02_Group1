@@ -34,7 +34,6 @@ public class UserBloodDonorList extends AppCompatActivity {
     private ArrayAdapter<String> arrayAdapter;
     private ArrayList<String> arrayListid = new ArrayList<>();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

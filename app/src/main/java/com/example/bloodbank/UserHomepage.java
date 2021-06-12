@@ -24,7 +24,6 @@ public class UserHomepage extends AppCompatActivity {
     long id = 0;
     Member member;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_homepage);
@@ -38,6 +37,13 @@ public class UserHomepage extends AppCompatActivity {
         btnMakeRequest = findViewById(R.id.btn_makerequest);
 
 
+//        Intent intent = getIntent();
+//        String id = intent.getStringExtra("id");
+//
+//        Log.d("Debuggggg",id.toString());
+//        reference =FirebaseDatabase.getInstance().getReference().child("Member").child(String.valueOf(id+1));
+
+
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,29 +55,10 @@ public class UserHomepage extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
+                            Intent intentHome2profile = new Intent(UserHomepage.this, UserViewProfile.class);
+                            startActivity(intentHome2profile);
+                        }
 
-                        String namefromDB = snapshot.child("name").getValue().toString();
-                        String agefromDB = snapshot.child("age").getValue().toString();
-                        String genderfromDB = snapshot.child("gender").getValue().toString();
-                        String phonefromDB = snapshot.child("phone").getValue().toString();
-                        String emailfromDB = snapshot.child("email").getValue().toString();
-                        String locationfromDB = snapshot.child("location").getValue().toString();
-                        String usernamefromDB = snapshot.child("username").getValue().toString();
-                        String bloodtypefromDB = snapshot.child("bloodtype").getValue().toString();
-
-                        Intent intentHome2profile = new Intent(UserHomepage.this, UserViewProfile.class);
-
-                        intentHome2profile.putExtra("name", namefromDB);
-                        intentHome2profile.putExtra("age", agefromDB);
-                        intentHome2profile.putExtra("location", locationfromDB);
-                        intentHome2profile.putExtra("phone", phonefromDB);
-                        intentHome2profile.putExtra("email", emailfromDB);
-                        intentHome2profile.putExtra("username", usernamefromDB);
-                        intentHome2profile.putExtra("gender", genderfromDB);
-                        intentHome2profile.putExtra("bloodtype", bloodtypefromDB);
-
-                        startActivity(intentHome2profile);
-                    }
 
 
                     @Override

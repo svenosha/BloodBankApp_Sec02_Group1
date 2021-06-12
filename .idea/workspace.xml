@@ -27,30 +27,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32a54316-a58a-4496-b855-5eaaa7b976dd" name="Default Changelist" comment="">
+    <list default="true" id="5a8d1bd5-8cda-439c-81e0-8827365a8c06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminConfirmUpdateBloodBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminConfirmUpdateBloodBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_confirm_update_blood_bank.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_confirm_update_blood_bank.xml" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserBloodDonorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/userLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/userLogin.java" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_API_28]" />
-
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RBDBB18B09151562]" />
-
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -83,10 +68,8 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-01T08:33:32.178Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
-
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../(Ori)BloodBankApp_Sec02_Group1" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -247,6 +230,7 @@
     <state x="805" y="323" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623425477087" />
     <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1623434408886">
       <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state x="488" y="148" key="FileChooserDialogImpl" timestamp="1623428464103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -256,6 +240,7 @@
     <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623434408886" />
     <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1623431256388">
       <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623421490114" />
     <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1623469744339">
       <screen x="1366" y="0" width="1366" height="728" />
@@ -266,6 +251,7 @@
     <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623431256388" />
     <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1623431256387">
       <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state width="1852" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623417033318" />
     <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1623469744338">
       <screen x="1366" y="0" width="1366" height="728" />
@@ -276,6 +262,7 @@
     <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623431256387" />
     <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1623431256387">
       <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state width="1852" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623417033317" />
     <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1623469744338">
       <screen x="1366" y="0" width="1366" height="728" />
@@ -286,6 +273,7 @@
     <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623431256387" />
     <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1623431256388">
       <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state width="1852" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623417033317" />
     <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1623469744338">
       <screen x="1366" y="0" width="1366" height="728" />
@@ -328,6 +316,6 @@
     <state x="339" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1623429048017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1623429048017" /></state>
+    <state x="339" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1623429048017" />
   </component>
 </project>

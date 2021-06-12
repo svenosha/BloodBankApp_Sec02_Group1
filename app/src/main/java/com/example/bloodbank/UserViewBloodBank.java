@@ -106,8 +106,22 @@ public class UserViewBloodBank extends AppCompatActivity {
        phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentphone = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:01138134345"));
-                startActivity(intentphone);
+                reff.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        String phoneno =""+ dataSnapshot.child("Phone").getValue().toString();
+                        Intent intentphone = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phoneno));
+                        startActivity(intentphone);
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+
+
+                });
             }
         });
     }

@@ -41,7 +41,7 @@ public class AdminConfirmUpdateBloodBank extends AppCompatActivity {
         reff = FirebaseDatabase.getInstance().getReference().child("BloodBank");
 
 
-        confirm.setOnClickListener(new View.OnClickListener() {
+       /* confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int aplus = Integer.parseInt(aPlusAmt.getText().toString());
@@ -63,16 +63,6 @@ public class AdminConfirmUpdateBloodBank extends AppCompatActivity {
                 hashmap.put("OMinus",ominus);
                 hashmap.put("ABMinus",abminus);
 
-               /* bloodbank.setAPlus(aplus);
-                bloodbank.setBPlus(bplus);
-                bloodbank.setOPlus(oplus);
-                bloodbank.setABPlus(abplus);
-                bloodbank.setAMinus(aminus);
-                bloodbank.setBMinus(bminus);
-                bloodbank.setOMinus(ominus);
-                bloodbank.setABMinus(abminus);
-                BloodBank blooodbank = new BloodBank();
-                blooodbank.put("APlus",aplus,"BPlus",bplus,"OPlus",oplus,"ABPlus",abplus,"AMinus",aminus,"BMinus",bminus,"OMinus",ominus,"ABMinus",abminus);*/
 
                 reff.child("penang").updateChildren(hashmap).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -85,6 +75,6 @@ public class AdminConfirmUpdateBloodBank extends AppCompatActivity {
 
 
             }
-        });
+        });*/
     }
 }

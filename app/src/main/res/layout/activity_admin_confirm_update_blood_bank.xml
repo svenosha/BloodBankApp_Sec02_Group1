@@ -81,7 +81,7 @@
 
     <EditText
         android:id="@+id/ed_phone"
-        android:layout_width="50dp"
+        android:layout_width="200dp"
         android:layout_height="33dp"
         android:layout_marginTop="133dp"
         android:layout_marginEnd="65dp"
@@ -349,6 +349,7 @@
         android:id="@+id/ed_BMinusAmount"
         android:layout_width="50dp"
         android:layout_height="33dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginBottom="31dp"

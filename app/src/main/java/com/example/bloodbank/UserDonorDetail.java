@@ -39,7 +39,7 @@ public class UserDonorDetail extends AppCompatActivity {
         String id = intent.getStringExtra("id");
 
 
-        Log.d("Debuggggg",id.toString());
+        Log.d("Debug",id.toString());
         database=FirebaseDatabase.getInstance().getReference().child("Member").child(id.toString());
         database.get().addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
             @Override
@@ -60,6 +60,16 @@ public class UserDonorDetail extends AppCompatActivity {
                                 Intent intentphone = new Intent(Intent.ACTION_DIAL);
                                 intentphone.setData(Uri.parse("tel:"+number));
                                 startActivity(intentphone);
+                            }
+                        });
+
+                        email.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                String mail = ""+ member.getEmail();
+                                Intent intentdonor2email = new Intent (UserDonorDetail.this, EmailDonor.class);
+                                intentdonor2email.putExtra("mail", mail);
+                                startActivity(intentdonor2email);
                             }
                         });
                     }

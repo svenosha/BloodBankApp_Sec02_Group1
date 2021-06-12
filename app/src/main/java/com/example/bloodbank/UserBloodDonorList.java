@@ -7,10 +7,13 @@ import androidx.appcompat.widget.SearchView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import com.google.firebase.database.ChildEventListener;
@@ -25,20 +28,21 @@ import java.util.ArrayList;
 public class UserBloodDonorList extends AppCompatActivity {
 
     ListView listView;
+    private EditText ed_search;
     private DatabaseReference Database;
     private ArrayList<String> arrayList = new ArrayList<>();
     private ArrayAdapter<String> arrayAdapter;
     private ArrayList<String> arrayListid = new ArrayList<>();
-//    private SearchView searchView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_blood_donor_list);
 
-        /*searchView=findViewById(R.id.search);*/
-
         Database = FirebaseDatabase.getInstance().getReference("Member");
         listView=(ListView)findViewById(R.id.lv_us_donor);
+        ed_search=(EditText)findViewById(R.id.ed_us_search);
         arrayAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arrayList);
         listView.setAdapter(arrayAdapter);
         Database.addChildEventListener(new ChildEventListener() {
@@ -77,7 +81,7 @@ public class UserBloodDonorList extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position >= 0){
                     Intent openViewList = new Intent(view.getContext(), UserDonorDetail.class);
-                    Log.d(arrayListid.get(position), "Eroor Debug");
+                    Log.d(arrayListid.get(position), "Error Debug");
                     openViewList.putExtra("id",arrayListid.get(position));
                     startActivity(openViewList);
                 }
@@ -98,7 +102,23 @@ public class UserBloodDonorList extends AppCompatActivity {
                 return false;
             }
         });*/
+        ed_search.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                (UserBloodDonorList.this).arrayAdapter.getFilter().filter(s);
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
     }
 }

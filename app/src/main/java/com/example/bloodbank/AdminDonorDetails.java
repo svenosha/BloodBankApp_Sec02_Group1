@@ -42,7 +42,7 @@ public class AdminDonorDetails extends AppCompatActivity {
         String id = intent.getStringExtra("id");
 
 
-        Log.d("Debuggggg",id.toString());
+        Log.d("Debug",id.toString());
         database=FirebaseDatabase.getInstance().getReference().child("Member").child(id.toString());
         database.get().addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
             @Override
@@ -75,25 +75,16 @@ public class AdminDonorDetails extends AppCompatActivity {
                                 startActivity(intentdetail2user);
                             }
                         });
-
-                        /*email.setOnClickListener(new View.OnClickListener() {
+                        email.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                String addresses = ""+ member.getEmail();
-                                String subject ="I would like to request blood donation";
-                                public void composeEmail(String[] addresses, String subject){
-                                    Intent intent =new Intent(Intent.ACTION_SENDTO);
-                                    intent.setType("");
-                                    intent.putExtra(Intent.EXTRA_EMAIL,addresses);
-                                    intent.putExtra(Intent.EXTRA_SUBJECT,subject);
-                                    if(intent.resolveActivity(getPackageManager()) !=null){
-                                        startActivity(intent);
-                                    }
-
-                                }
-
+                                String mail = ""+ member.getEmail();
+                                Intent intentdonor2email = new Intent (AdminDonorDetails.this, EmailDonor.class);
+                                intentdonor2email.putExtra("mail", mail);
+                                startActivity(intentdonor2email);
                             }
-                        });*/
+                        });
+
                     }
                 }
             }
@@ -101,22 +92,5 @@ public class AdminDonorDetails extends AppCompatActivity {
 
 
 
-        /*email.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //intent for email
-                Intent intentEmail = new Intent(AdminDonorDetails.this,Email.class);
-                startActivity(intentEmail);
-            }
-        });
-
-
-        phone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentphone = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:01138134345"));
-                startActivity(intentphone);
-            }
-        });*/
     }
 }

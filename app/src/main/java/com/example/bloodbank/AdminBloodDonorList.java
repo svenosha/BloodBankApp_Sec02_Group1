@@ -6,10 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import com.google.firebase.database.ChildEventListener;
@@ -28,6 +31,7 @@ public class AdminBloodDonorList extends AppCompatActivity {
     private ArrayAdapter<String> arrayAdapter;
     private ArrayList<String> arrayListid = new ArrayList<>();
     ListView listView;
+    EditText ed_search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,7 @@ public class AdminBloodDonorList extends AppCompatActivity {
 
         Database = FirebaseDatabase.getInstance().getReference("Member");
         listView=(ListView)findViewById(R.id.lv_ad_donor);
+        ed_search=(EditText)findViewById(R.id.ed_ad_search);
         arrayAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arrayList);
         listView.setAdapter(arrayAdapter);
         Database.addChildEventListener(new ChildEventListener() {
@@ -74,29 +79,30 @@ public class AdminBloodDonorList extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position >= 0){
                     Intent openViewList = new Intent(view.getContext(), AdminDonorDetails.class);
-                    Log.d(arrayListid.get(position), "Eroor Debug");
+                    Log.d(arrayListid.get(position), "Error Debug");
                     openViewList.putExtra("id",arrayListid.get(position));
                     startActivity(openViewList);
                 }
             }
         });
 
-
-
-
-       /* searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        ed_search.addTextChangedListener(new TextWatcher() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-                AdminRequestList.this.arrayAdapter.getFilter().filter(query);
-                return false;
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
             }
 
             @Override
-            public boolean onQueryTextChange(String newText) {
-                AdminRequestList.this.arrayAdapter.getFilter().filter(newText);
-                return false;
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                (AdminBloodDonorList.this).arrayAdapter.getFilter().filter(s);
+
             }
-        });*/
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
 
     }

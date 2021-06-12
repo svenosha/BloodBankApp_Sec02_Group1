@@ -81,8 +81,24 @@ public class UserViewBloodBank extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //intent for email
+                reff.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String mail =""+ dataSnapshot.child("Email").getValue().toString();
                 Intent intentEmail = new Intent(UserViewBloodBank.this,Email.class);
+                intentEmail.putExtra("mail",mail);
                 startActivity(intentEmail);
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+
+
+                });
+
             }
         });
 

@@ -39,6 +39,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Username"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:textSize="24sp" />
 
@@ -50,6 +51,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Password"
+            android:textColor="@color/black"
             android:inputType="textPassword"
             android:textSize="24sp" />
 
@@ -64,5 +66,12 @@
             app:backgroundTint="#C85250" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buttonAuthenticate"
+        android:text="Authenticate" />
 
 </LinearLayout>

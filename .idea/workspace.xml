@@ -5,6 +5,9 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,20 +28,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a45be123-b294-4a13-8b5b-ffb7c9cda29d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminUserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminBloodDonorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminBloodDonorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminDonorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/AdminDonorDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserHomepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/bloodbank/UserViewProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_view_profile.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RBDBB18B09151562]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_6P_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -55,6 +55,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1scoEX2po3ewYs9S3fE9AiK4JQn" />
   <component name="ProjectLevelVcsManager">
@@ -66,17 +67,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="RBDBB18B09151562" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-02T15:24:58.557Z" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-01T08:33:32.178Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CB18025_TeohJiaEn_Section02" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.1137101950">
+      <recent name="com.example.bloodbank" />
+    </key>
+    <key name="android.template.1349456136">
+      <recent name="com.example.bloodbank" />
+    </key>
+    <key name="android.template.-1957004878">
       <recent name="com.example.bloodbank" />
     </key>
     <key name="android.template.-1196981551">
@@ -85,10 +90,10 @@
     <key name="android.template.-32311658">
       <recent name="com.example.bloodbank" />
     </key>
-    <key name="android.template.439192260">
+    <key name="android.template.1149990127">
       <recent name="com.example.bloodbank" />
     </key>
-    <key name="android.template.1349456136">
+    <key name="android.template.439192260">
       <recent name="com.example.bloodbank" />
     </key>
   </component>
@@ -187,18 +192,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1623251363863">
+    <state x="392" y="0" key="#app" timestamp="1623272238106">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="392" y="0" key="#app/0.0.1366.738@0.0.1366.738" timestamp="1623272238106" />
+    <state x="146" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623271762076">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="146" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1623271762076" />
+    <state x="686" y="106" key="#com.intellij.ide.util.MemberChooser" timestamp="1623429590867">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1854" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1623291831300" />
     <state x="488" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1623251363863" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622549731761">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="686" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1623429590867" />
+    <state x="580" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623408180435">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1622549731761" />
-    <state x="100" y="100" width="1166" height="528" key="AVDManager" timestamp="1622542308689">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="580" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623408180435" />
+    <state x="141" y="143" width="1639" height="755" key="AVDManager" timestamp="1623420009832">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1166" height="528" key="AVDManager/0.0.1366.728@0.0.1366.728" timestamp="1622542308689" />
+    <state x="141" y="143" width="1639" height="755" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1623420009832" />
     <state x="263" y="118" key="AndroidCreateResourceDirectoryDialog" timestamp="1622549684985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -208,41 +225,70 @@
     </state>
     <state x="310" y="148" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1622549473088" />
     <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1621182983240" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1622355669829">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="805" y="323" key="AndroidCreateXmlResourceDialog" timestamp="1623425477087">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="805" y="323" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623425477087" />
+    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1623434408886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="488" y="150" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1623272289185" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622355669829" />
-    <state width="1293" height="175" key="GridCell.Tab.0.bottom" timestamp="1622560834375">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623434408886" />
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1623431256388">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1623296987693" />
     <state width="1293" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622560834375" />
-    <state width="1293" height="175" key="GridCell.Tab.0.center" timestamp="1622560834375">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623431256388" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1623431256387">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="174" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1623296987693" />
     <state width="1293" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1622560834375" />
-    <state width="1293" height="175" key="GridCell.Tab.0.left" timestamp="1622560834374">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623431256387" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1623431256387">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="174" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1623296987692" />
     <state width="1293" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1622560834374" />
-    <state width="1293" height="175" key="GridCell.Tab.0.right" timestamp="1622560834375">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623431256387" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1623431256388">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="174" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1623296987693" />
     <state width="1293" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1622560834375" />
-    <state x="184" y="13" key="SettingsEditor" timestamp="1622644098440">
+    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623431256388" />
+    <state x="263" y="111" key="IDE.errors.dialog" timestamp="1623270480642">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="263" y="111" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1623270480642" />
+    <state x="339" y="496" key="MultipleFileMergeDialog" timestamp="1623282651508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="339" y="496" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623282651508" />
+    <state x="407" y="186" key="SettingsEditor" timestamp="1623434863469">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state x="184" y="13" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1622644098440" />
+    <state x="407" y="186" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1623434863469" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1622667537617">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1622667537617" />
-    <state x="579" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621185721419">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="579" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621185721419" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1622654678192">
+    <state x="515" y="292" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623272146371">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="515" y="292" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1623272146371" />
+    <state x="579" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621185721419" />
+    <state x="402" y="157" key="git4idea.merge.GitMergeDialog" timestamp="1623272104445">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="402" y="157" key="git4idea.merge.GitMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1623272104445" />
+    <state x="476" y="233" key="run.anything.popup" timestamp="1623287566065">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1622654678192" />
+    <state x="476" y="233" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623287566065" />
   </component>
 </project>

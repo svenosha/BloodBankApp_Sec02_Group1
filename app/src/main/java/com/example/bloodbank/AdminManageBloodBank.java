@@ -41,11 +41,11 @@ public class AdminManageBloodBank extends AppCompatActivity {
         reff = FirebaseDatabase.getInstance().getReference().child("BloodBank").child("penang");
 
 
-        /*reff.addValueEventListener(new ValueEventListener() {
+        reff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 //get value
-                String Location=dataSnapshot.child("location").getValue().toString();
+                String Location=dataSnapshot.child("Location").getValue().toString();
                 String Email=dataSnapshot.child("Email").getValue().toString();
                 String Phone=dataSnapshot.child("Phone").getValue().toString();
                 String APlus = dataSnapshot.child("APlus").getValue().toString();
@@ -76,7 +76,7 @@ public class AdminManageBloodBank extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        });*/
+        });
 
         update.setOnClickListener(new View.OnClickListener() {
             @Override

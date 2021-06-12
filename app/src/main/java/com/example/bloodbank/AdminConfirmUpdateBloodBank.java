@@ -12,12 +12,14 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+
 public class AdminConfirmUpdateBloodBank extends AppCompatActivity {
 
     private EditText location,email, phone,  aPlusAmt, bPlusAmt, aMinusAmt, bMinusAmt, oPlusAmt, abPlusAmt, oMinusAmt, abMinusAmt;
     private Button confirm;
     DatabaseReference reff;
-    BloodBank bloodbank;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,24 +39,31 @@ public class AdminConfirmUpdateBloodBank extends AppCompatActivity {
         abMinusAmt = findViewById(R.id.ed_ABMinusAmount);
         confirm = findViewById(R.id.btn_confirm);
         reff = FirebaseDatabase.getInstance().getReference().child("BloodBank");
-        bloodbank = new BloodBank();
+
 
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*int aplus = Integer.parseInt(aPlusAmt.getText().toString().trim());
-                int bplus = Integer.parseInt(bPlusAmt.getText().toString().trim());
-                int oplus = Integer.parseInt(oPlusAmt.getText().toString().trim());
-                int abplus = Integer.parseInt(abPlusAmt.getText().toString().trim());
-                int aminus = Integer.parseInt(aMinusAmt.getText().toString().trim());
-                int bminus = Integer.parseInt(bMinusAmt.getText().toString().trim());
-                int ominus = Integer.parseInt(oMinusAmt.getText().toString().trim());
-                int abminus = Integer.parseInt(abMinusAmt.getText().toString().trim());
+                int aplus = Integer.parseInt(aPlusAmt.getText().toString());
+                int bplus = Integer.parseInt(bPlusAmt.getText().toString());
+                int oplus = Integer.parseInt(oPlusAmt.getText().toString());
+                int abplus = Integer.parseInt(abPlusAmt.getText().toString());
+                int aminus = Integer.parseInt(aMinusAmt.getText().toString());
+                int bminus = Integer.parseInt(bMinusAmt.getText().toString());
+                int ominus = Integer.parseInt(oMinusAmt.getText().toString());
+                int abminus = Integer.parseInt(abMinusAmt.getText().toString());
 
-                //bloodbank.setLocation(location.getText().toString().trim());
-                //bloodbank.setPhone(phone.getText().toString().trim());
-                //bloodbank.setEmail(email.getText().toString().trim());
-                bloodbank.setAPlus(aplus);
+                HashMap hashmap = new HashMap();
+                hashmap.put("APlus",aplus);
+                hashmap.put("BPlus",bplus);
+                hashmap.put("OPlus",oplus);
+                hashmap.put("ABPlus",abplus);
+                hashmap.put("AMinus",aminus);
+                hashmap.put("BMinus",bminus);
+                hashmap.put("OMinus",ominus);
+                hashmap.put("ABMinus",abminus);
+
+               /* bloodbank.setAPlus(aplus);
                 bloodbank.setBPlus(bplus);
                 bloodbank.setOPlus(oplus);
                 bloodbank.setABPlus(abplus);
@@ -63,14 +72,14 @@ public class AdminConfirmUpdateBloodBank extends AppCompatActivity {
                 bloodbank.setOMinus(ominus);
                 bloodbank.setABMinus(abminus);
                 BloodBank blooodbank = new BloodBank();
-                blooodbank.put("APlus",aplus,"BPlus",bplus,"OPlus",oplus,"ABPlus",abplus,"AMinus",aminus,"BMinus",bminus,"OMinus",ominus,"ABMinus",abminus);
+                blooodbank.put("APlus",aplus,"BPlus",bplus,"OPlus",oplus,"ABPlus",abplus,"AMinus",aminus,"BMinus",bminus,"OMinus",ominus,"ABMinus",abminus);*/
 
-                reff.child("BloodBank").updateChildren(blooodbank).addOnSuccessListener(new OnSuccessListener<Void>() {
+                reff.child("penang").updateChildren(hashmap).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(AdminConfirmUpdateBloodBank.this,"Blood Bank Update Successfully",Toast.LENGTH_SHORT).show();
                     }
-                });*/
+                });
 
                 
 

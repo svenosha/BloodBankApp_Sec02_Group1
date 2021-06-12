@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodBank">
         <activity android:name=".AdminConfirmUpdateBloodBank"></activity>
+        <activity android:name=".AdminEmail"/>
         <activity android:name=".AdminManageBloodBank" />
         <activity android:name=".Email" />
         <activity android:name=".AdminRequestList"/>

@@ -28,13 +28,13 @@ public class AdminViewRequestList extends AppCompatActivity {
 
     private TextView names, ages,genders,emails,phones,locations,bloodGroups,reasons;
     private DatabaseReference reff;
-    private Button btnphone;
+    private Button btnphone,btnemail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_request_list);
         btnphone=findViewById(R.id.btn_phone);
-
+        btnemail=findViewById(R.id.btn_email);
         names=(TextView)findViewById(R.id.user_name);
         ages=(TextView)findViewById(R.id.user_age);
         genders=(TextView)findViewById(R.id.user_gender);
@@ -64,6 +64,26 @@ public class AdminViewRequestList extends AppCompatActivity {
                         locations.setText(request.getLocation());
                         bloodGroups.setText(request.getBloodGroup());
                         reasons.setText(request.getReason());
+
+                        btnphone.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                String number = ""+ request.getPhone();
+                                Intent intentphone = new Intent(Intent.ACTION_DIAL);
+                                intentphone.setData(Uri.parse("tel:"+number));
+                                startActivity(intentphone);
+                            }
+                        });
+
+                        btnemail.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intentAdminEmail = new Intent(AdminViewRequestList.this, AdminEmail.class);
+                                startActivity(intentAdminEmail);
+                            }
+                        });
+
+
                     }
                 }
             }

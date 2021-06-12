@@ -104,14 +104,6 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"/>
         </RadioGroup>
-
-<!--        <EditText-->
-<!--            android:id="@+id/user_gender"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:ems="10"-->
-<!--            android:inputType="textPersonName"-->
-<!--            android:text="" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -250,13 +242,6 @@
 
         </RadioGroup>
 
-<!--        <EditText-->
-<!--            android:id="@+id/user_blood_group"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:ems="10"-->
-<!--            android:inputType="textPersonName"-->
-<!--            android:text="" />-->
     </LinearLayout>
 
     <LinearLayout

@@ -15,6 +15,8 @@
         <activity android:name=".AdminConfirmUpdateBloodBank"></activity>
         <activity android:name=".AdminManageBloodBank" />
         <activity android:name=".Email" />
+        <activity android:name=".AdminRequestList"/>
+        <activity android:name=".AdminViewRequestList"/>
         <activity android:name=".UserViewBloodBank" />
         <activity android:name=".AdminUserList" />
         <activity android:name=".UserEditProfile" />
@@ -25,6 +27,7 @@
         <activity android:name=".UserBloodDonorList" />
         <activity android:name=".AdminHomepage" />
         <activity android:name=".UserHomepage" />
+        <activity android:name=".UserMakeRequest"/>
         <activity android:name=".registration" />
         <activity android:name=".adminLogin" />
         <activity android:name=".userLogin" />

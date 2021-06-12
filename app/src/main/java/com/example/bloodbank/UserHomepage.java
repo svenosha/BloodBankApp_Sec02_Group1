@@ -21,7 +21,7 @@ public class UserHomepage extends AppCompatActivity {
     private TextView username;
     private Button profile, BDonor, BBank, btnMakeRequest;
     DatabaseReference reference;
-    long id=0;
+    long id = 0;
     Member member;
 
     @Override
@@ -44,7 +44,7 @@ public class UserHomepage extends AppCompatActivity {
 
 //                reference = FirebaseDatabase.getInstance().getReference().child("Member").child("1");
 
-                reference = FirebaseDatabase.getInstance().getReference().child("Member").child(String.valueOf(id+1));
+                reference = FirebaseDatabase.getInstance().getReference().child("Member").child(String.valueOf(id + 1));
                 reference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -59,19 +59,19 @@ public class UserHomepage extends AppCompatActivity {
                         String usernamefromDB = snapshot.child("username").getValue().toString();
                         String bloodtypefromDB = snapshot.child("bloodtype").getValue().toString();
 
-                            Intent intentHome2profile = new Intent(UserHomepage.this, UserViewProfile.class);
+                        Intent intentHome2profile = new Intent(UserHomepage.this, UserViewProfile.class);
 
-                            intentHome2profile.putExtra("name", namefromDB);
-                            intentHome2profile.putExtra("age", agefromDB);
-                            intentHome2profile.putExtra("location", locationfromDB);
-                            intentHome2profile.putExtra("phone", phonefromDB);
-                            intentHome2profile.putExtra("email", emailfromDB);
-                            intentHome2profile.putExtra("username", usernamefromDB);
-                            intentHome2profile.putExtra("gender", genderfromDB);
-                            intentHome2profile.putExtra("bloodtype", bloodtypefromDB);
+                        intentHome2profile.putExtra("name", namefromDB);
+                        intentHome2profile.putExtra("age", agefromDB);
+                        intentHome2profile.putExtra("location", locationfromDB);
+                        intentHome2profile.putExtra("phone", phonefromDB);
+                        intentHome2profile.putExtra("email", emailfromDB);
+                        intentHome2profile.putExtra("username", usernamefromDB);
+                        intentHome2profile.putExtra("gender", genderfromDB);
+                        intentHome2profile.putExtra("bloodtype", bloodtypefromDB);
 
-                            startActivity(intentHome2profile);
-                        }
+                        startActivity(intentHome2profile);
+                    }
 
 
                     @Override
@@ -86,7 +86,7 @@ public class UserHomepage extends AppCompatActivity {
         BDonor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentHome2list = new Intent (UserHomepage.this, UserBloodDonorList.class);
+                Intent intentHome2list = new Intent(UserHomepage.this, UserBloodDonorList.class);
                 startActivity(intentHome2list);
 
             }
@@ -95,24 +95,20 @@ public class UserHomepage extends AppCompatActivity {
         BBank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentHome2blood = new Intent (UserHomepage.this, UserViewBloodBank.class);
+                Intent intentHome2blood = new Intent(UserHomepage.this, UserViewBloodBank.class);
                 startActivity(intentHome2blood);
 
             }
         });
-        
 
         btnMakeRequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMakeRequest();
+                Intent intentMakeRequest = new Intent(UserHomepage.this, UserMakeRequest.class);
+                startActivity(intentMakeRequest);
             }
         });
 
     }
-
-    public void openMakeRequest(){
-        Intent intentMakeRequest = new Intent(this, UserMakeRequest.class);
-        startActivity(intentMakeRequest);
-    }
 }
+

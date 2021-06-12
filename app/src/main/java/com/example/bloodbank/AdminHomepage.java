@@ -19,7 +19,7 @@ public class AdminHomepage extends AppCompatActivity {
         userList = findViewById(R.id.btn_viewusers);
         donorList = findViewById(R.id.btn_viewdonors);
         btnrequestlist = findViewById(R.id.btn_viewrequests);        
-        bloodList = findViewById(R.id.btn_viewrequests);
+        bloodList = findViewById(R.id.btn_viewbloodbank);
 
 
         userList.setOnClickListener(new View.OnClickListener() {
@@ -39,11 +39,11 @@ public class AdminHomepage extends AppCompatActivity {
         });
 
 
-        bloodList.setOnClickListener(new View.OnClickListener() {
+       bloodList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intenthome2blood = new Intent (AdminHomepage.this, Adm.class);
-//                startActivity(intenthome2blood);
+                Intent intentHome2blood = new Intent (AdminHomepage.this, AdminManageBloodBank.class);
+                startActivity(intentHome2blood);
             }
         });
 

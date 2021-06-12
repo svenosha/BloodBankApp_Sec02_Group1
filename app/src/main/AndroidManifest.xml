@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bloodbank">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,25 +12,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodBank">
-        <activity android:name=".AdminUserDetails"></activity>
+        <activity android:name=".EmailDonor"></activity>
+        <activity android:name=".AdminEmail"/>
+        <activity android:name=".AdminConfirmUpdateBloodBank" />
+        <activity android:name=".AdminManageBloodBank" />
+        <activity android:name=".Email" />
+        <activity android:name=".AdminRequestList" />
+        <activity android:name=".AdminViewRequestList" />
+        <activity android:name=".UserViewBloodBank" />
         <activity android:name=".AdminUserList" />
         <activity android:name=".UserEditProfile" />
         <activity android:name=".UserViewProfile" />
-        <activity android:name=".adminConfirmUpdateBloodBank" />
-        <activity android:name=".UserViewBloodBank" />
-        <activity android:name=".AdminManageBloodBank" />
         <activity android:name=".UserDonorDetail" />
         <activity android:name=".AdminDonorDetails" />
         <activity android:name=".AdminBloodDonorList" />
         <activity android:name=".UserBloodDonorList" />
         <activity android:name=".AdminHomepage" />
         <activity android:name=".UserHomepage" />
+        <activity android:name=".UserMakeRequest" />
         <activity android:name=".registration" />
         <activity android:name=".adminLogin" />
         <activity android:name=".userLogin" />
-        <activity android:name=".UserMakeRequest"/>
-        <activity android:name=".AdminRequestList"/>
-        <activity android:name=".AdminViewRequestList"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

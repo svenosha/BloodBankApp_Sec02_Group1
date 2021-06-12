@@ -39,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:text="" />
     </LinearLayout>
@@ -62,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:text="" />
     </LinearLayout>
@@ -80,13 +82,28 @@
             android:textSize="20dp"
             android:text="Gender      :" />
 
-        <EditText
-            android:id="@+id/user_gender"
+        <RadioGroup
+            android:id="@+id/rggender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbmale"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/rbfemale"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
@@ -108,6 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:text="" />
     </LinearLayout>
@@ -131,8 +149,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:text="" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -151,11 +171,20 @@
 
         <EditText
             android:id="@+id/user_location"
-            android:layout_width="match_parent"
+            android:layout_width="203dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             android:text="" />
+
+        <ImageView
+            android:id="@+id/locateSearch"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_search_category_default" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -173,13 +202,46 @@
             android:textColor="@color/black"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/user_blood_group"
+        <RadioGroup
+            android:id="@+id/rgblood"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbA"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="A"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbB"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="B"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbAB"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="AB"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbO"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="O"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
     </LinearLayout>
 
     <LinearLayout
@@ -194,27 +256,49 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:text="Gender      :" />
+            android:text="Reason     :" />
 
         <EditText
             android:id="@+id/user_reason"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:text="" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_submit"
-        android:layout_width="200dp"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="SUBMIT"
-        android:textSize="26sp"
-        app:backgroundTint="#C85250" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            app:backgroundTint="#C85250" />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_marginLeft="9dp"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="view request"
+            android:textSize="20sp"
+            app:backgroundTint="#C85250" />
+    </LinearLayout>
 
 
 </LinearLayout>

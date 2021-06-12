@@ -61,7 +61,7 @@ public class AdminUserDetails extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 String mail = ""+ member.getEmail();
-                                Intent intentdonor2email = new Intent (UserDonorDetail.this, EmailDonor.class);
+                                Intent intentdonor2email = new Intent (AdminUserDetails.this, EmailDonor.class);
                                 intentdonor2email.putExtra("mail", mail);
                                 startActivity(intentdonor2email);
                             }

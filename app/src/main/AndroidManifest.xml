@@ -25,6 +25,7 @@
         <activity android:name=".UserBloodDonorList" />
         <activity android:name=".AdminHomepage" />
         <activity android:name=".UserHomepage" />
+        <activity android:name=".UserMakeRequest"/>
         <activity android:name=".registration" />
         <activity android:name=".adminLogin" />
         <activity android:name=".userLogin" />

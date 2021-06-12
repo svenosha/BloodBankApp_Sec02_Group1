@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class UserMakeRequest extends AppCompatActivity implements LocationListener {
-    private EditText name,age,gender,email,phone,locations,bloodGroup,reason;
+    private EditText name,age,email,phone,locations,reason;
     private Button submit;
     private DatabaseReference reff;
     private Request request;
@@ -44,18 +44,19 @@ public class UserMakeRequest extends AppCompatActivity implements LocationListen
     private ImageView gps;
     private LocationManager locationManager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_request);
-        name=(EditText)findViewById(R.id.user_name);
-        gender=(EditText)findViewById(R.id.user_gender);
-        age=(EditText)findViewById(R.id.user_age);
-        email=(EditText)findViewById(R.id.user_email);
-        phone=(EditText)findViewById(R.id.user_phone);
-        locations=(EditText)findViewById(R.id.user_location);
-        bloodGroup=(EditText)findViewById(R.id.user_blood_group);
-        reason=(EditText)findViewById(R.id.user_reason);
+        name = (EditText) findViewById(R.id.user_name);
+//        gender=(EditText)findViewById(R.id.user_gender);
+        age = (EditText) findViewById(R.id.user_age);
+        email = (EditText) findViewById(R.id.user_email);
+        phone = (EditText) findViewById(R.id.user_phone);
+        locations = (EditText) findViewById(R.id.user_location);
+//        bloodGroup=(EditText)findViewById(R.id.user_blood_group);
+        reason = (EditText) findViewById(R.id.user_reason);
         gps = findViewById(R.id.locateSearch);
         genders = findViewById(R.id.rggender);
         bloodType = findViewById(R.id.rgblood);
@@ -65,14 +66,14 @@ public class UserMakeRequest extends AppCompatActivity implements LocationListen
         bloodB = findViewById(R.id.rbB);
         bloodAB = findViewById(R.id.rbAB);
         bloodO = findViewById(R.id.rbO);
-        submit=findViewById(R.id.btn_submit);
+        submit = (Button) findViewById(R.id.btn_submit);
         request = new Request();
-        reff= FirebaseDatabase.getInstance().getReference().child("Request");
+        reff = FirebaseDatabase.getInstance().getReference().child("Request");
         reff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists())
-                    maxid=(dataSnapshot.getChildrenCount());
+                    maxid = (dataSnapshot.getChildrenCount());
             }
 
             @Override
@@ -92,7 +93,7 @@ public class UserMakeRequest extends AppCompatActivity implements LocationListen
                 String ab = bloodAB.getText().toString().trim();
                 String o = bloodO.getText().toString().trim();
 
-                int agea=Integer.parseInt(age.getText().toString().trim());
+                int agea = Integer.parseInt(age.getText().toString().trim());
                 request.setName(name.getText().toString().trim());
 //                request.setGender(gender.getText().toString().trim());
                 request.setEmail(email.getText().toString().trim());
@@ -119,45 +120,44 @@ public class UserMakeRequest extends AppCompatActivity implements LocationListen
                 }
 
 
-                reff.child(String.valueOf(maxid+1)).setValue(request);
-                Toast.makeText(UserMakeRequest.this,"submit successfully",Toast.LENGTH_LONG).show();
-                startActivity(new Intent(getApplicationContext(),UserHomepage.class));
+                reff.child(String.valueOf(maxid + 1)).setValue(request);
+                Toast.makeText(UserMakeRequest.this, "submit successfully", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), UserHomepage.class));
 
 
             }
         });
 
 
-
-
-
-    //create sensor location
+        //create sensor location
         if (ContextCompat.checkSelfPermission(UserMakeRequest.this, Manifest.permission.ACCESS_FINE_LOCATION)
-            != PackageManager.PERMISSION_GRANTED){
-        ActivityCompat.requestPermissions(UserMakeRequest.this,new String[]{
-                Manifest.permission.ACCESS_FINE_LOCATION
-        }, 100);
-    }
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(UserMakeRequest.this, new String[]{
+                    Manifest.permission.ACCESS_FINE_LOCATION
+            }, 100);
+        }
 
 
         gps.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            getLocation();
-        }
-    });
-}
+            @Override
+            public void onClick(View v) {
+                getLocation();
+            }
+        });
+
+    }
+
 
     @SuppressLint("MissingPermission")
     private void getLocation() {
         try {
             locationManager = (LocationManager) getApplicationContext().getSystemService(LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000,5, UserMakeRequest.this);
-        }catch (Exception e){
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, UserMakeRequest.this);
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
+
 
 
     @Override

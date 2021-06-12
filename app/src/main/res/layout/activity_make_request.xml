@@ -268,16 +268,37 @@
             android:text="" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_submit"
-        android:layout_width="200dp"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="SUBMIT"
-        android:textSize="26sp"
-        app:backgroundTint="#C85250" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            app:backgroundTint="#C85250" />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_marginLeft="9dp"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="view request"
+            android:textSize="20sp"
+            app:backgroundTint="#C85250" />
+    </LinearLayout>
 
 
 </LinearLayout>

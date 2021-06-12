@@ -35,7 +35,7 @@ import java.util.Locale;
 
 public class UserMakeRequest extends AppCompatActivity implements LocationListener {
     private EditText name,age,email,phone,locations,reason;
-    private Button submit;
+    private Button submit,viewReq;
     private DatabaseReference reff;
     private Request request;
     private long maxid=0;
@@ -65,6 +65,7 @@ public class UserMakeRequest extends AppCompatActivity implements LocationListen
         bloodA = findViewById(R.id.rbA);
         bloodB = findViewById(R.id.rbB);
         bloodAB = findViewById(R.id.rbAB);
+        viewReq = findViewById(R.id.btn_view);
         bloodO = findViewById(R.id.rbO);
         submit = (Button) findViewById(R.id.btn_submit);
         request = new Request();
@@ -142,6 +143,14 @@ public class UserMakeRequest extends AppCompatActivity implements LocationListen
             @Override
             public void onClick(View v) {
                 getLocation();
+            }
+        });
+
+        viewReq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentMakeRequest = new Intent(UserMakeRequest.this, AdminRequestList.class);
+                startActivity(intentMakeRequest);
             }
         });
 
